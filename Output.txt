@@ -1,0 +1,179 @@
+PSDL Assignment 1 Code
+Name: - Harsh Thakkar
+Roll no: - 23276
+#include <stdio.h>
+#include <stdlib.h>
+#include<pic18f458.h>
+/*
+*
+*/
+int a=Ox22;
+int b=0x33;
+int main(int argc, char** argv) {
+TRISB=0;
+TRISC=0;
+TRISD=0;
+PORTB=a;
+PORTC=b;
+PORTD=PORTB+PORTC;
+return (EXIT_SUCCESS);
+}
+Address ‘ Name Hex Decimal Binary Char
+re Fs0 PORTA 0x00 0 oooo0000 '.'
+F8l PORTB 0x22 34 00100010 '""
+co F82 PORTC 0x33 51 00110011 '3'
+g F83 PORTD 0x55 &5 01010101 'U'
+— |F84 PORTE 0x00 0 oooo0000 '.’
+Address ‘ Name Hex Decimal Binary Char
+rs F83 PORTD 0x55 85 01010101 'U'
+Fs4 PORTE 0x00 0 00000000 Max
+. 5 F89 LATA Oxo00 0 oooo0000 '.'
+g FSA LATB 0x22 34 00100010 '""
+— |F&B LATC 0x33 51 00110011 '3'
+Address ‘ Name Hex Decimal Binary Char
+rs Fsc LATD 0x55 8&5 01010101 'U"'
+FsD LATE 0x00 0 ooooo000 '.'
+. 5 F92 TRISA Ox7F 127 01111111 'O'
+e F93 TRISB 0x00 0 ooooo00o0 '.'
+— |F94 TRISC 0x00 0 ooooo000 '.'
+Address ‘ Name Hex Decimal Binary Char
+rs F93 TRISB 0x00 0 ooooo000 '.'
+F94 TRISC 0x00 0 oooooc00 '.'
+. oi F95 TRISD 0x00 0 ooooo000 '.'
+g F96 TRISE 0x07 7 00000111 '.'
+— |F9D PIElL 0x00 0 oooo0000 '.'
+#include <stdio.h>
+#include <stdlib.h>
+#include<pic18f458.h>
+/*
+*
+*/
+int a=Ox22;
+int b=0x33;
+int main(int argc, char** argv) {
+TRISB=0;
+TRISC=0;
+TRISD=OxFF;
+PORTB=a;
+PORTC=b;
+PORTD=PORTB+PORTC;
+return (EXIT_SUCCESS);
+Address ‘ Name Hex Decimal Binary Char
+¥ F76 TXE... 0x00 0 00000000 °."
+Fs0 PORTA 0x00 0 00000000 °."
+@ ire PORTB 0x22 34 00100010 '*"
+@ |Fe2 PORTC 0x33 51 00110011 "3°
+_ |Fe3 PORTD 0x00 0 00000000 *."
+Address ‘ Name Hex Decimal Binary Char
+¥ Fe9 LATA 0x00 0 00000000 '."
+FSA LATB 0x22 34 00100010 '*"
+™ rep LATC 0x33 51 00110011 "3"
+@ |Fec LATD 0x55 65 01010101 ‘U"
+_— |FeD LATE 0x00 0 00000000 °."
+F92 TRISA Ox7F 127 01111111 ‘O°
+F93 TRISB 0x00 0 00000000 *.*
+Fo4 TRISC 0x00 0 00000000 °.*
+F95 TRISD OxFF 255 llllllll ‘¥'
+FSE TRISE 0x07 7 00000111 °."
+#include <stdio.h>
+#include <stdlib.h>
+#include<pic18f458.h>
+/*
+*
+*/
+int a=Ox22;
+int b=0x33;
+int main(int argc, char** argv) {
+TRISB=0;
+TRISC=OxFF;
+TRISD=OxFF;
+PORTB=a;
+PORTC=b;
+PORTD=PORTB+PORTC;
+return (EXIT_SUCCESS);
+}
+Address ‘ Name Hex Decimal Binary Char
+_ |FS0 PORTA 0x00 0 00000000 '."
+ar Fel PORTB 0x22 34 00100010 '""
+S Fe2 PORTC 0x00 0 00000000 *.*
+@ |Fe3 PORTD 0x00 0 00000000 *.*
+—|Fea_ PORTE oxoo 0 00000000
+Address ‘ Name Hex Decimal Binary Char
+_ |F8S LATA 0x00 0 00000000 '."
+ar Fea LATB 0x22 34 00100010 '**
+ irep LATC 0x33 51 00110011 '3"
+@ |Fec LATD 0x22 34 00100010 °""
+_— |FsD LATE 0x00 0 00000000 '."
+@ Address 7 Name Hex Decimal Binary Char
+F92 TRISA Ox7F 127 01111111 'o°
+a F93 TRISB 0x00 0 ooooo0000 '.'
+ |rs4 TRISC OxFF 255 llllllll '¥'
+@ Fs TRISD OxFF 255 llllllll '¥"
+FS6 TRISE 0x07 7 00000111 °.'
+#include <stdio.h>
+#include <stdlib.h>
+#include<pic18f458.h>
+/*
+*
+*/
+int a=Ox22;
+int b=0x33;
+int main(int argc, char** argv) {
+TRISB=OxFF;
+TRISC=OxFF;
+TRISD=OxFF;
+PORTB=a;
+PORTC=b;
+PORTD=PORTB+PORTC;
+return (EXIT_SUCCESS);
+}
+Address ‘ Name Hex Decimal Binary Char
+as Fso PORTA 0x00 0 oooo0000 '.'
+Fé81 PORTB 0x00 0 oooo0000 '.'
+. 5 F82 PORTC 0x00 0 oooo0000 '.'
+Pi F83 PORTD 0x00 0 ooooo000 '.'
+— |F84 PORTE 0x00 0 00000000 MAN
+Address ‘ Name Hex Decimal Binary Char
+ae Fs9 LATA 0x00 0 ooooo000 '.'
+FsaA LATB 0x22 34 00100010 '""
+. 9 FsB LATC 0x33 51 00110011 '3'
+ge Fsc LATD 0x00 0 ooooo000 '.'
+—— |F8D LATE 0x00 0 oooo0000 '."
+Address ‘ Name Hex Decimal Binary Char
+re F92 TRISA Ox7F 127 01111111 'O'
+F93 TRISB OxFF 255 11111111 'y'
+. F94 TRISC OxFF 255 llllllll 'y'
+e F95 TRISD OxFF 255 11111111 '¥'
+— |F9E TRISE 0x07 7 00000111 '.'
+#include <stdio.h>
+#include <stdlib.h>
+#include<pic18f458.h>
+/*
+*
+*/
+int a=Ox22;
+int b=0x33;
+int main(int argc, char** argv) {
+PORTB=a;
+PORTC=b;
+PORTD=PORTB+PORTC;
+return (EXIT_SUCCESS);
+}
+Address Name Hex Decimal Binary Char
+F80 PORTA 0x00 0 00000000 '."
+- Fel PORTB 0x00 0 00000000 '."
+ \re2 PORTC 0x00 0 00000000 '."
+@ Fes PORTD 0x00 0 00000000 '."
+—|Fea___—-PORTE =oOxo0 0 —-00000000
+Address ‘ Name Hex Decimal Binary Char
+Feo LATA 0x00 0 oooo0000 °."
+a Fea LATB 0x22 34 00100010 '""
+@ rep LATC 0x33 51 00110011 '3'
+@ |Fec LATD 0x00 0 00000000 *."
+_— |FsD LATE 0x00 0 ooo00000 *."
+Address ‘ Name Hex Decimal Binary Char
+F92 TRISA Ox7F 127 01111111 ‘oO
+¥ FS3 TRISB OxFF 255 11111111 '¥'
+SE |rsa TRISC OxFF 255 11111111 '"¥'
+@ Fs TRISD OxFF 255 11111111 '"¥'
+_— |F9é TRISE 0x07 7 00000111 °*.'
