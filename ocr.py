@@ -2,7 +2,10 @@ import cv2
 import pytesseract
 import numpy as np
 import pdf2image
+import os
 
+directory = os.getcwd()+r'\poppler-0.68.0\bin'
+print(directory)
 def convert_pdf_to_image(document, dpi):
     images = []
     images.extend(
@@ -11,7 +14,7 @@ def convert_pdf_to_image(document, dpi):
                             lambda image: cv2.cvtColor(
                                 np.asarray(image), code=cv2.COLOR_RGB2BGR
                             ),
-                            pdf2image.convert_from_path(document, dpi=dpi,poppler_path=r'C:\Users\user\Desktop\My Things\assignment\poppler-0.68.0\bin'),
+                            pdf2image.convert_from_path(document, dpi=dpi,poppler_path=directory),
                         )
                     )
                 )
